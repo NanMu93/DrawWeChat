@@ -18,3 +18,5 @@ SCROLL_SLEEP_TIME = 2
 FRIEND = "好友"
 # 指定截止时间
 TDATETIME = "1990年1月1日"
+# 导出Excel文件路径
+EXCEL_FILE = "F:/wechat.xlsx"
