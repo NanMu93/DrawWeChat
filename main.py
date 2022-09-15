@@ -198,10 +198,10 @@ class Moments():
         dict1['链接'] = rlink_list
         print(dict1)
         df = pd.DataFrame(dict1)
-        #    df.to_excel('venv/data/wechat.xlsx', sheet_name='sheet1')
-        with pd.ExcelWriter('F:/test.xlsx', mode='a', engine='openpyxl') as writer:
+        #    df.to_excel('EXCEL_FILE', sheet_name='sheet1')
+        with pd.ExcelWriter(EXCEL_FILE, mode='a', engine='openpyxl') as writer:
             writer.if_sheet_exists = "replace"
-            df1 = pd.read_excel('F:/test.xlsx', sheet_name='Sheet1', index_col=0)
+            df1 = pd.read_excel(EXCEL_FILE, sheet_name='Sheet1', index_col=0)
             f = [df1, df]
             result = pd.concat(f, axis=0)
             result.to_excel(writer, sheet_name="Sheet1", index_label=0)
