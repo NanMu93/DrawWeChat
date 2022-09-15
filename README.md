@@ -43,3 +43,4 @@ Desired Capability：
   "appium:noReset": "True"
 }
 ```
+附[Appium python client API](https://appium.github.io/python-client-sphinx/index.html)链接
