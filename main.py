@@ -172,7 +172,7 @@ class Moments():
                             end_point3 = True
                             break
                     except NoSuchElementException:
-                        print("没取到月份")
+                        # print("没取到月份")
                         pass
                 except NoSuchElementException:
                     pass
@@ -182,8 +182,8 @@ class Moments():
                 ryear_list.append(ryear)
             bounds = items[len(items) - 1].get_attribute('bounds')
             m = re.findall(r'\d+', bounds)
-            print(m)
-            print(type(m))
+            # print(m)
+            # print(type(m))
             half_m = int(m[len(m) - 1]) / 2 - 100
             # 判断是否已经到结尾
             page = self.driver.page_source
