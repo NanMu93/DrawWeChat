@@ -44,3 +44,5 @@ Desired Capability：
 }
 ```
 附[Appium python client API](https://appium.github.io/python-client-sphinx/index.html)链接
+
+2023年2月3日更新后可以爬取图片和视频
